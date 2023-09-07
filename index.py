@@ -10,7 +10,7 @@ app=Flask(__name__)
 def inicio():
     usuarios = db['usuarios']
     #usuariosReceived = usuarios.find()
-    return render_template('/index.html')
+    return render_template('index.html')
 
 @app.route('/usuarios', methods=['POST'])
 def addUsuario():
